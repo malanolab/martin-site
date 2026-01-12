@@ -1,6 +1,8 @@
 baseURL: "https://www.martin-lange.org/"
 languageCode: "en-us"
 title: "Martin – IT Consulting & Service Management"
+relativeURLs: true
+canonifyURLs: false
 module:
   imports:
     - path: github.com/gurusabarish/hugo-profile
@@ -214,4 +216,5 @@ params:
   #customcSS:
 
   # - "css/custom.css?v=20260109"
+
 
