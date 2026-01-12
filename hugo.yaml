@@ -1,4 +1,4 @@
-baseURL: "https://www.martin-lange.org"
+baseURL: "https://www.martin-lange.org/"
 languageCode: "en-us"
 title: "Martin – IT Consulting & Service Management"
 module:
@@ -15,7 +15,7 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
+menu:
   main:
     - identifier: about
       name: About
@@ -214,3 +214,4 @@ params:
   #customcSS:
 
   # - "css/custom.css?v=20260109"
+
