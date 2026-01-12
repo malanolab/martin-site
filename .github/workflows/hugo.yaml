@@ -34,10 +34,8 @@ jobs:
           hugo-version: "0.152.2"
           extended: true
 
-       - name: Initialize Hugo Modules
-        run: |
-          hugo mod init martin-site || true
-          hugo mod tidy
+      - name: Initialize Hugo Modules
+        run: hugo mod tidy
 
       - name: Build site
         run: hugo --minify --gc
