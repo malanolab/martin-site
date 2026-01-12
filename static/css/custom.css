@@ -1,0 +1,156 @@
+html { filter: hue-rotate(120deg) !important; }
+
+/* Remove white card behind hero image (Hugo Profile) */
+.hero-img-wrapper,
+.hero-img,
+.hero-img-wrapper .card,
+.hero-img-wrapper .card-body {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Ensure image stays circular */
+.hero-img img {
+  border-radius: 50% !important;
+  background: transparent !important;
+}
+
+
+/* Elegant avatar ring for dark theme */
+.hero-img img {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15); /* soft light ring */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04),
+    /* subtle outer glow */ 0 8px 20px rgba(0, 0, 0, 0.6); /* depth shadow */
+  background: transparent;
+}
+/* NUCLEAR OVERRIDE: kill any white ring around hero avatar */
+#hero img,
+.hero img,
+.hero-img img,
+.hero-image img,
+/*.rounded-circle,
+img.rounded-circle {
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* ===== HARD KILL: Hugo Profile About image blob/oval background ===== */
+
+/* About section containers: remove any background color/image */
+section#about,
+section#about * ,
+#about,
+#about * {
+  background-image: none !important;
+}
+
+/* Common about-image wrappers in Hugo Profile (different versions use different class names) */
+#about .about-img,
+#about .about-img-wrapper,
+#about .about-image,
+#about .about-me,
+#about .about,
+#about .col-lg-4,
+#about .col-md-4,
+#about .col-12 {
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Disable decorative pseudo-elements (often used for blobs) */
+#about .about-img::before,
+#about .about-img::after,
+#about .about-img-wrapper::before,
+#about .about-img-wrapper::after,
+#about .about-image::before,
+#about .about-image::after,
+#about .col-lg-4::before,
+#about .col-lg-4::after,
+#about .col-md-4::before,
+#about .col-md-4::after {
+  content: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Finally: keep the avatar itself clean */
+#about img {
+  border-radius: 50% !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove the white oval in About section (Bootstrap img-thumbnail) */
+#about img.img-thumbnail {
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Optional: consistent subtle ring (dark theme) */
+section#about .image img.rounded-circle {
+  border: 2px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.04),
+              0 8px 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ===== Remove Bootstrap thumbnail styling (white oval) in About section ===== */
+section#about img.img-thumbnail {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Global body font */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* About section text */
+#about p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  max-width: 720px; /* prevents overly wide text */
+}
+
+/* Section headings (About, Experience, etc.) */
+.section-title h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Hero subtitle – slightly more presence */
+.hero-content h3 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+/* Hero supporting text (below name & tagline) */
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+}
+/* Fix word wrapping in Credentials / Achievements cards */
+#achievements .card-text,
+#achievements p {
+  white-space: normal;
+  word-break: break-word;
+}

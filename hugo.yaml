@@ -1,0 +1,213 @@
+baseURL: "https://www.martin-lange.org"
+languageCode: "en-us"
+title: "Martin – IT Consulting & Service Management"
+theme: hugo-profile
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 5
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: about
+      name: About
+      url: /#about
+      weight: 1
+    - identifier: experience
+      name: Experience
+      url: /#experience
+      weight: 2
+    - identifier: achievements
+      name: Credentials
+      url: /#achievements
+      weight: 3
+    - identifier: education
+      name: Education
+      url: /#education
+      weight: 4
+    - identifier: contact
+      name: Contact
+      url: /#contact
+      weight: 5
+
+    # ✅ Legal dropdown
+    - identifier: legal
+      name: Legal
+      weight: 90
+    - identifier: impressum
+      name: Impressum
+      url: /impressum/
+      parent: legal
+      weight: 1
+    - identifier: datenschutz
+      name: Datenschutz
+      url: /datenschutz/
+      parent: legal
+      weight: 2
+      
+params:
+  title: "Martin Lange"
+  description: "IT Consultant & Service Management Leader"
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  animate: true
+  mathjax: false
+
+  navbar:
+    brandName: "Martin"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true   # ✅ show Credentials in navbar
+      disableContact: true
+
+  hero:
+    enable: true
+    intro: "Hi, I’m"
+    title: "Martin"
+    subtitle: "a senior IT Consultant & Service Management Leader"
+    content: |-
+      15+ years of experience at the intersection of consulting, commercial leadership,
+      and IT service management.
+      Trusted partner for business and IT stakeholders in complex,
+      fast-paced, and regulated environments.
+    image: "/images/Avatar_gentle2.png"
+    roundImage: true
+    bottomImage:
+      enable: false
+    button:
+      enable: false
+    #socialLinks:
+     # fontAwesomeIcons:
+      #  - icon: fab fa-linkedin
+       #   url: https://www.linkedin.com/in/martin-mba-287a982b/
+        #- icon: fab fa-github
+         # url: https://github.com/yourprofile
+
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I am an IT consultant and service management leader with a strong business background, combining
+      service design and delivery expertise with commercial responsibility in B2B environments.
+      I take a pragmatic, hands-on approach, focusing on turning business requirements into effective
+      IT services and measurable outcomes.
+
+      I have worked in complex, fast-paced, and regulated environments across consulting, enterprise IT, 
+      and customer-facing roles, partnering closely with business and IT stakeholders to clarify priorities, 
+      establish effective governance, and deliver sustainable results.
+
+  experience:
+    enable: true
+    items:
+      - company: "Global Biotech Company"
+        jobs:
+          - name: "Manager, IT Service Integration"
+            date: "2023 – Present"
+            content: |-
+              - Central interface between core business units and IT
+              - Translated strategic business demand into implementation-ready IT solutions
+              - Established structured demand intake and solution governance
+              - Strengthened transparency, prioritization, and delivery readiness
+
+      - company: "Software Consultancy"
+        jobs:
+          - name: "Senior Consultant, IT Strategy"
+            date: "2020 – 2022"
+            content: |-
+              - Led IT Service, IT Asset, and IT Demand Management initiatives for cross-industry clients
+              - Implemented SAM, ITSM, EA, and FinOps frameworks and tools
+              - Enabled measurable software and cloud cost optimizations
+              - Acted as project manager and trusted advisor to senior stakeholders
+
+      - company: "Enterprise Software Vendor"
+        jobs:
+          - name: "Senior Consultant, Software Asset Management"
+            date: "2017 – 2019"
+            content: |-
+              - Led enterprise SAM implementations for international customers
+              - Achieved 20–30% annual software cost reductions
+              - Provided functional leadership for an IBM Vendor Competence Center
+              - Combined technical, commercial, and governance expertise
+
+      - company: "IT Services & Systems Integrator"
+        jobs:
+          - name: "Consultant & Sales Lead, IBM Software"
+            date: "2013 – 2017"
+            content: |-
+              - Managed named enterprise accounts across the IBM software portfolio
+              - Delivered license optimization and audit support engagements
+              - Designed and launched Software Asset Management as a Service
+              - Drove revenue growth through solution-oriented consulting
+
+      - company: "Global Technology Company"
+        jobs:
+          - name: "Senior Key Account Manager, Cloud Software"
+            date: "2005 – 2011"
+            content: |-
+              - Owned revenue and account strategy for key enterprise customers
+              - Consistently ranked among the top 10% of peers
+              - Led complex, consultative software sales cycles
+              - Promotion to the "Hundred Percent Club" for sustained high performance
+
+  # ✅ Credentials (implemented via the theme's Achievements section)
+  achievements:
+    enable: true
+    title: "Credentials"
+    items:
+      - title: "Delivery & Governance"
+        content: |-
+          PRINCE2 project management
+
+      - title: "IT Service Management"
+        content: |-
+          Certified Software Asset Manager                                    
+          ITIL v4 Foundation
+
+      - title: "Cloud Foundation & Optimization"
+        content: |-
+          AWS Certified Cloud Practitioner
+          FinOps Practitioner
+
+  education:
+    enable: true
+    items:
+      - title: "Master of Business Administration (MBA)"
+        school:
+          name: "Aston Business School, UK"
+          url: "https://www.aston.ac.uk"
+        date: "2011"
+        content: "Merit scholarship awarded for academic excellence."
+
+      - title: "B.A. Business Information Systems"
+        school:
+          name: "Cooperative State University, Germany"
+          url: "https://www.dhbw.de"
+        date: "2005"
+
+  contact:
+    enable: true
+    content: "If you’d like to connect or discuss opportunities, feel free to reach out."
+    btnName: "Contact me"
+    btnLink: "mailto:contact@martin-lange.org"
+
+  footer:
+    socialNetworks:
+      linkedin: https://www.linkedin.com/in/martin-mba-287a982b/
+     # github: https://github.com/yourprofile
+
+  #customcSS:
+  # - "css/custom.css?v=20260109"
