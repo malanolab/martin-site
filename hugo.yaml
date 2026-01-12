@@ -1,7 +1,9 @@
 baseURL: "https://www.martin-lange.org"
 languageCode: "en-us"
 title: "Martin – IT Consulting & Service Management"
-theme: hugo-profile
+module:
+  imports:
+    - path: github.com/gurusabarish/hugo-profile
 
 enableRobotsTXT: true
 
@@ -210,4 +212,5 @@ params:
      # github: https://github.com/yourprofile
 
   #customcSS:
+
   # - "css/custom.css?v=20260109"
